@@ -1,0 +1,21 @@
+/* SCROLL BAR STYLE (ONLY WORKS IN CHROME) */
+/* Width */
+::-webkit-scrollbar {
+  height: 5px;
+  width: 100%;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #444e80;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #abafc6;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5397d6;
+}

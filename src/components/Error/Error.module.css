@@ -1,0 +1,26 @@
+.container {
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+
+  /* background-color: gray; */
+  color: var(--secondary-color);
+}
+
+.container i {
+  margin: 0 3rem;
+  color: hsla(194, 85%, 62%, 0.5);
+}
+
+.container h1 {
+  color: hsla(333, 93%, 56%, 0.5);
+  font-size: 15vh;
+}
+
+.container h2 {
+  color: var(--primary-color);
+}

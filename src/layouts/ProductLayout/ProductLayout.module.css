@@ -1,0 +1,13 @@
+.container {
+  height: 100%;
+  width: 100%;
+
+  color: var(--secondary-color);
+}
+
+.productContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}

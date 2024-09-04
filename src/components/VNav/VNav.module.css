@@ -1,0 +1,28 @@
+.active {
+  background-color: var(--secondary-bg);
+  color: var(--secondary-color);
+}
+
+.navLink {
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+
+  text-decoration: none;
+  color: var(--tertiary-color);
+  font-family: "Audiowide", sans-serif;
+  transition: 0.5s ease;
+}
+
+.navLink:hover {
+  background-color: var(--secondary-bg);
+}
+.navLink > i {
+  color: var(--secondary-color);
+  font-size: 20px;
+  padding-right: 0.5rem;
+}

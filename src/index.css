@@ -1,13 +1,108 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  /* Font size */
+  --main-heading: 2.8rem;
+  --primary-heading: 2rem;
+  --secondary-heading: 1.5rem;
+  --tertiary-heading: 1rem;
+
+  /* Background colors */
+  --primary-bg: #02000b;
+  --secondary-bg: #21212b;
+  --tertiary-bg: #bfbfbf;
+
+  --transparent-bg: #232230;
+
+  --sky-blue: #4cc9f0;
+  --dark-blue: #480ca8;
+  --rose: #f72585;
+
+  /* --primary-bg: #0a1517; */
+  /* --secondary-bg: #21212b;
+  ---tertiary-bg: #bfbfbf; */
+
+  /* Highlight color */
+  --primary-hl2: #4361ee;
+  --primary-hl3: rgba(255, 255, 255, 0.5);
+
+  /* Font colors */
+  --primary-color: rgba(255, 255, 255, 0.9);
+  --primary-color-black: rgba(0, 0, 0, 0.9);
+  --secondary-color: rgba(255, 255, 255, 0.7);
+  --secondary-color-black: rgba(0, 0, 0, 0.7);
+  --tertiary-color: rgba(255, 255, 255, 0.5);
+  --tertiary-color-black: rgba(0, 0, 0, 0.5);
+  --quaternary-color: rgba(255, 255, 255, 0.2);
+  --quaternary-color-black: rgba(0, 0, 0, 0.2);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: var(--main-heading);
+  font-family: "Audiowide", sans-serif;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+h2 {
+  font-size: var(--primary-heading);
+  font-family: "Audiowide", sans-serif;
+  /* color: var(--secondary-color); */
+}
+h3 {
+  font-size: var(--secondary-heading);
+  font-family: "Audiowide", sans-serif;
+  font-weight: lighter;
+  /* color: var(--secondary-color); */
+}
+h4 {
+  font-size: var(--tertiary-heading);
+  font-family: "Audiowide", sans-serif;
+  font-weight: 500;
+  /* color: var(--secondary-color); */
+}
+
+h5 {
+  /* font-size: var(--tertiary-heading); */
+  font-family: "Audiowide", sans-serif;
+  font-weight: 500;
+  /* color: var(--secondary-color); */
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+body {
+  background-color: rgb(27, 27, 27);
+}
+
+/* Swiper */
+.mySwiper {
+  top: -50%;
+  transform: translateY(25%);
+  margin: 0;
+}
+
+.swiper {
+  width: 35rem;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
 }

@@ -1,0 +1,85 @@
+.card {
+  backdrop-filter: blur(25px) saturate(180%);
+  -webkit-backdrop-filter: blur(25px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.8);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+}
+
+.card > h1 {
+  margin-bottom: 1rem;
+}
+
+/* flex container */
+
+.flexContainer {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.flexContainer p {
+  color: var(--tertiary-color);
+}
+
+.flexItem1 {
+  width: 40%;
+  border-radius: 1.5rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.flexItem2 {
+  width: 60%;
+  height: 100%;
+  border-radius: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.itemHead {
+  height: 25%;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.itemHead h3 {
+  margin-bottom: 0.5rem;
+}
+
+.gridContainer {
+  height: 75%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: 35% 35%;
+  gap: 1rem;
+}
+
+.gridItem {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  /* background-color: #22212f; */
+
+  background-size: cover;
+  background-position: center;
+}
+
+.gridItem > div {
+  padding: 1.5rem;
+  /* background-color: red; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  backdrop-filter: blur(0px) saturate(200%);
+  -webkit-backdrop-filter: blur(0px) saturate(200%);
+  background-color: rgba(17, 25, 40, 0.3);
+}

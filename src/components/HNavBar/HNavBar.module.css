@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 2rem;
+  padding: 0.2rem;
+  border-radius: 2rem;
+
+  color: var(--tertiary-color);
+  background-color: var(--secondary-bg);
+}
+
+.navLink {
+  flex-grow: 1;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  padding: 0.5rem;
+  border-radius: 2.2rem;
+  font-family: "Audiowide", sans-serif;
+  font-size: 0.9rem;
+}
+
+.active {
+  background-color: var(--primary-hl3);
+  color: black;
+}

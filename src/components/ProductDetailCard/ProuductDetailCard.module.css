@@ -1,0 +1,125 @@
+.container {
+  width: 100%;
+  height: 90%;
+  /* border-radius: 1.5rem; */
+  overflow: hidden;
+  display: flex;
+  /* 
+  background-color: rgb(255, 0, 0); */
+}
+
+.container p {
+  color: var(--tertiary-color);
+}
+.container h4 {
+  color: var(--tertiary-color);
+}
+/* Left */
+.containerLeft {
+  position: relative;
+  width: 35%;
+  height: 100%;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0%;
+}
+.containerLeft > div {
+  padding: 1.5rem;
+  backdrop-filter: blur(25px) saturate(180%);
+  -webkit-backdrop-filter: blur(25px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.95);
+
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.containerLeft > div > div {
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: 50% 65%;
+}
+.containerLeft > div > div > p {
+  color: var(--tertiary-color);
+}
+
+.containerLeft > div > div > h2 {
+  color: var(--secondary-color);
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5%;
+}
+
+/* Right */
+.containerRight {
+  width: 65%;
+  height: 100%;
+  padding: 1.5rem;
+}
+.flexHead {
+  display: flex;
+  align-items: center;
+  align-content: baseline;
+  /* flex-direction: column; */
+}
+
+.containerRight h2 {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 0.9rem;
+  color: var(--secondary-color);
+}
+
+.type {
+  display: inline-block;
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.9rem;
+  background-color: hsla(194, 85%, 62%, 0.8);
+}
+
+/* HNav */
+.HNav {
+  margin: 0.9rem 0 0.8rem;
+}
+.HNav > div {
+  display: inline-block;
+  text-align: center;
+  margin: 0 0.4rem;
+}
+
+.HNav a::after {
+  content: "";
+  width: 0%;
+  height: 1.5px;
+  background: hsla(194, 85%, 62%, 0.8);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.HNav a:hover::after {
+  width: 100%;
+}
+
+.navLink {
+  /* padding: 0 0.4rem; */
+  text-decoration: none;
+  font-family: "Audiowide", sans-serif;
+  font-size: 0.9rem;
+  color: var(--tertiary-color);
+}
+
+.active {
+  color: hsla(194, 85%, 62%, 1);
+}
+
+.HNav .active::after {
+  width: 100%;
+}

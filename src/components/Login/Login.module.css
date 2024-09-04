@@ -1,0 +1,51 @@
+.container {
+  padding: 2rem;
+  margin: auto;
+  text-align: center;
+  height: 100%;
+}
+
+.loginHeader {
+  margin: 0 0;
+  height: 5rem;
+}
+.loginHeader > h1 {
+  margin-bottom: 0.5rem;
+}
+.loginHeader > p {
+  color: rgb(255, 82, 82);
+}
+
+form {
+  display: inline-flex;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  flex-direction: column;
+  background-color: var(--transparent-bg);
+}
+
+label {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--tertiary-color);
+}
+
+input {
+  outline: none;
+  width: 20rem;
+  padding: 0.7rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: hsla(194, 85%, 62%, 0.8);
+  /* color: var(--primary-color-black); */
+}

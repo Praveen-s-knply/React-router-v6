@@ -1,0 +1,95 @@
+.increase {
+  padding: 0.1rem 0.2rem;
+  border-radius: 0.5rem;
+  color: var(--primary-color-black);
+  background-color: greenyellow;
+}
+
+.decrease {
+  padding: 0.1rem 0.2rem;
+  border-radius: 0.5rem;
+  color: var(--primary-color-black);
+  background-color: crimson;
+}
+
+.gridContainer {
+  height: 85%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 19.4% 19.4% 21.2% 30%;
+  grid-template-rows: 25% 25% 40%;
+
+  justify-content: space-between;
+  align-content: space-between;
+}
+.gridContainer h2 {
+  color: var(--secondary-color);
+}
+.gridContainer h5,
+h4,
+h3 {
+  color: var(--tertiary-color);
+}
+.gridContainer p {
+  font-size: 0.75rem;
+  color: var(--tertiary-color);
+}
+.gridContainer h3 .gridContainer p {
+  font-size: 12px;
+}
+.gridContainer > div {
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Contianer cards */
+
+.incomeCard {
+  grid-area: 1/1 / span 2 / span 2;
+  display: flex;
+  flex-flow: column;
+  gap: 1.5rem;
+  background-color: var(--transparent-bg);
+}
+.incomeCard > p > span {
+  font-family: "Audiowide", sans-serif;
+}
+.normalCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: var(--transparent-bg);
+}
+
+.activitiesCard {
+  grid-area: 1/4 / span 3 / span 1;
+}
+.activitiesCard > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.activitiesCard > div > div {
+  display: flex;
+  gap: 1rem;
+}
+.imgIcon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 5px;
+  background-position: center;
+  background-size: 90%;
+  /* background-color: rgba(255, 255, 255, 0.663); */
+  background-color: var(--transparent-bg);
+}
+.graphCard {
+  grid-area: 3/1 / span 1 / span 3;
+}

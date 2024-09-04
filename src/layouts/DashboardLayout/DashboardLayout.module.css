@@ -1,0 +1,111 @@
+.gridContainer {
+  height: 85%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 21.2% 21.2% 23.8% 23.8%;
+  grid-template-rows: 25% 25% 40%;
+
+  justify-content: space-between;
+  align-content: space-between;
+
+  /* background-color: gray; */
+}
+.gridContainer h5,
+i {
+  color: var(--tertiary-color);
+}
+.gridContainer p {
+  font-size: 0.75rem;
+  color: var(--tertiary-color);
+}
+.gridContainer > div {
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--transparent-bg);
+}
+
+.item3 {
+  grid-area: 1/3 / span 2 / span 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  background-color: var(--transparent-bg);
+}
+
+.item4 {
+  grid-area: 1/4 / span 2 / span 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  background-color: var(--transparent-bg);
+}
+
+.itemGraph {
+  grid-area: 3/1 / span 1 / span 2;
+  display: flex;
+
+  /* background-color: gray; */
+}
+
+/* pie chart */
+.userPiechart {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background-image: conic-gradient(
+    pink 0deg,
+    pink 216deg,
+    lightblue 216deg,
+    lightblue 309.6deg,
+    orange 0
+  );
+}
+.subscriptionsPiechart {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background-image: conic-gradient(pink 0deg, pink 252deg, lightblue 0);
+}
+.pieChartContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60%;
+}
+.pieChartDetail {
+  display: flex;
+  align-items: center;
+}
+
+.pieChartDetail > div {
+  height: 10px;
+  width: 12px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.increase {
+  padding: 0.1rem 0.2rem;
+  border-radius: 0.5rem;
+  color: var(--primary-color-black);
+  background-color: greenyellow;
+}
+
+.decrease {
+  padding: 0.1rem 0.2rem;
+  border-radius: 0.5rem;
+  color: var(--primary-color-black);
+  background-color: rgb(255, 49, 90);
+}

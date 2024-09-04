@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 2rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background-color: var(--secondary-bg);
+}
+
+.container div {
+  flex-grow: 1;
+  padding: 0.7rem;
+  text-align: center;
+  cursor: pointer;
+  /* color: var(--tertiary-color); */
+}
+
+.container p {
+  color: var(--tertiary-color);
+  font-family: "Audiowide", sans-serif;
+  opacity: 1;
+}
+
+.active {
+  background-color: var(--primary-hl3);
+}
+
+.active p {
+  color: black;
+}
